@@ -1,0 +1,7 @@
+main: net.simplyrin.killrecorder.Main
+name: KillRecorder
+version: 1.0.0
+author: SimplyRin
+commands:
+  killrecorder:
+    usage: /killrecorder
