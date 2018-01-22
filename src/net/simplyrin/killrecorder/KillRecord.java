@@ -22,7 +22,7 @@ public class KillRecord {
 			map.put(player, kills);
 		}
 
-		List<Map.Entry<String,Integer>> entries =  new ArrayList<Map.Entry<String,Integer>>(map.entrySet());
+		List<Map.Entry<String,Integer>> entries = new ArrayList<Map.Entry<String,Integer>>(map.entrySet());
 		Collections.sort(entries, new Comparator<Map.Entry<String,Integer>>() {
 			@Override
 			public int compare(Entry<String, Integer> o1, Entry<String, Integer> o2) {
