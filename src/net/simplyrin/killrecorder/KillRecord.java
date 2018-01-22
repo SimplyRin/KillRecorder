@@ -39,29 +39,4 @@ public class KillRecord {
 		}
 	}
 
-	/**
-	public static String getPlayer(int rank) {
-		Main plugin = Main.getPlugin();
-		plugin.reloadConfig();
-
-		HashMap<Integer, String> map = new HashMap<Integer, String>();
-		List<Integer> list = new ArrayList<Integer>();
-		for(String uuid : plugin.getConfig().getConfigurationSection("Players").getKeys(false)) {
-			String player = plugin.getConfig().getString("Players." + uuid + ".Player");
-			int kills = plugin.getConfig().getInt("Players." + uuid + ".Kills");
-
-			map.put(kills, player);
-			list.add(kills);
-		}
-
-		Collections.sort(list, Comparator.reverseOrder());
-
-		for(Integer i : list) {
-			Main.getPlugin().getServer().getConsoleSender().sendMessage(Main.getPrefix() + i);
-		}
-
-		return map.get(list.get(rank));
-	}
-	 */
-
 }
