@@ -47,6 +47,7 @@ public class Main extends JavaPlugin implements Listener {
 		if(!plugin.getConfig().isSet("Players." + player.getUniqueId().toString() + ".Kills")) {
 			plugin.getConfig().set("Players." + player.getUniqueId().toString() + ".Kills", 0);
 			plugin.saveConfig();
+			plugin.reloadConfig();
 		}
 	}
 
